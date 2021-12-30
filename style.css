@@ -1,0 +1,343 @@
+/* this file is loaded by index.html and styles the page */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", Helvetical, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+main {
+  width: 70%;
+  max-width: 100em;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  line-height: 1.5em;
+}
+
+main p {
+  padding: 0.5em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+footer {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3em;
+  padding: 1.0em;
+  border-top: 1px solid lightgrey;
+  background-color: #c6d2da;
+  width: 100%;
+}
+
+footer h3 {
+  padding-bottom: 0.6em
+}
+
+footer div {
+  padding: 1.0em;
+}
+
+footer li {
+  padding-top: 0.4em;
+  padding-bottom: : 0.4em;
+  font-size: 0.8em;
+  line-height: 1.2em;
+}
+
+footer p {
+  padding-top: 0.4em;
+  padding-bottom: : 0.4em;
+  font-size: 0.8em;
+  line-height: 1.2em;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+b {
+  color: #c9523d;
+  font-weight: bold;
+}
+
+announcement {
+  padding: 3em;
+  width: 65%;
+  text-align: left;
+  color: #2a2d7c;
+}
+
+nav {
+  padding: 3em;
+  width: 35%;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+nav li {
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  text-align: center;
+}
+
+counter {
+  padding: 3em;
+  display: block;
+  background-color: #000000;
+  width: 100%;
+  text-align: center;
+}
+
+counter .number {
+  color: #ffffff;
+  font-size: 2.7em;
+  user-select: none;
+}
+
+carousel-title {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0.75em;
+}
+
+carousel-title div {
+  padding: 0.75em;
+  font-weight: bold;
+  text-align: center;
+}
+
+carousel {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+carousel .page-number {
+  padding-top: 0.5em;
+  padding-left: 0.9em;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+carousel .arrow-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 4em;
+}
+
+carousel .arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  width: 100%;
+  user-select: none;
+  text-decoration: none;
+  transition: all 1s ease-in;
+  font-size: 3em;
+  border-radius: 0.1em;
+  z-index: 2;
+}
+
+carousel .arrow:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 1s ease-in;
+  text-decoration: none;
+}
+
+carousel .arrow-box-left {
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+carousel .arrow-box-right {
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+carousel .arrow-left {
+  height: 1.6em;
+}
+
+carousel .arrow-right {
+  height: 1.6em;
+}
+
+carousel .slide {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 1s linear;
+}
+
+carousel .active {
+  display: block;
+  position: relative;
+  opacity: 1;
+  transition: all 1s linear;
+}
+
+carousel .footer {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 0.6em;
+}
+
+carousel img {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+carousel-nav {
+  padding: 0.9em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+carousel-nav button {
+  margin: 0.3em;
+  display: block;
+  width: 1em;
+  height: 1em;
+  border-radius: 5em;
+  background-color: #bbbbbb;
+  border: 0;
+}
+
+carousel-nav .active {
+  background-color: #717171;
+  border: 0;
+}
+
+carousel-nav button:active {
+  background-color: #717171;
+  border: 0;
+}
+
+carousel-nav button:hover {
+  background-color: #717171;
+  border: 0;
+}
+
+credit {
+  padding: 0.3em;
+  width: 100%;
+  text-align: center;
+}
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+  announcement {
+    padding: 1.5em;
+    padding-bottom: 0.6em;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav {
+    padding: 1.5em;
+    padding-top: 0.6em;
+    width: 100%;
+    justify-content: center;
+    align-content: space-between;
+  }
+
+  nav li {
+    width: 33%;
+    padding: 0em;
+    text-align: center;
+    flex: 1, 1, 0em;
+  }
+
+  footer {
+    flex-direction: column-reverse;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  footer div {
+    padding: 1.0em;
+    padding-left: 0em;
+    padding-right: 0em;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  main p {
+    padding: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  carousel .footer {
+    position: inherit;
+    left: auto;
+    right: auto;
+    bottom: auto;
+  }
+}
+
+/* tablet */
+@media only screen and (min-width: 601px) and (max-width: 1279px) {
+  main {
+    width: 80%;
+  }
+}
+
+/* desktop */
+/* @media only screen and (min-width: 1280px) {} */

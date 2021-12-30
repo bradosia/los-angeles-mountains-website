@@ -1,0 +1,116 @@
+<!-- This is the awful HTML comment syntax -->
+<!DOCTYPE html> <!-- Message to browser...I think I am HTML -->
+<html lang="en">
+<!-- My text is in English -->
+
+<head>
+  <meta charset="utf-8"> <!-- Binary encoding of characters -->
+  <title>Static server</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- This will come in handy later -->
+
+  <!-- import the webpage's css -->
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat: 200, 300, 400, 600, 700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans: 200, 300, 400, 600, 700" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <announcement>
+    jan shrem and maria <b>manetti shrem museum</b> of art
+  </announcement>
+  <nav>
+    <ul>
+      <li><a href="#">home</a></li>
+      <li><a href="#">visit</a></li>
+      <li><a href="#">about</a></li>
+    </ul>
+  </nav>
+
+  <counter>
+    <div class="number" id="counter">
+      3,623,037
+    </div>
+  </counter>
+
+  <main>
+    <carousel-title>
+      <div>
+        <h1>Stephen Kaltenbach: The Beginning and The End</h1>
+      </div>
+      <div>
+        On view January 26-May 10,2020
+      </div>
+    </carousel-title>
+
+    <carousel id="myCarousel">
+      <div class="page-number"></div>
+      <div class="arrow-box arrow-box-left"><a class="arrow arrow-left">&lt;
+        </a></div>
+      <div class="arrow-box arrow-box-right"><a class="arrow arrow-right">&gt;
+        </a></div>
+      <div class="slide active">
+        <img src="static/fabric.jpg"></img>
+        <div class="footer">
+          Stephen Kaltenbach and guests, MODERN DRAPERY, 2020. Felt Fabric, 45 x 60 inches.
+        </div>
+      </div>
+      <div class="slide">
+        <img src="static/fatherPortrait.jpg"></img>
+        <div class="footer">
+          Stephen Kaltenbach, Portrait of My Father, 1972-79. Acrylic on canvas, 114 x 170 ¾ inches
+        </div>
+      </div>
+      <div class="slide">
+        <img src="static/roomCube.jpg"></img>
+        <div class="footer">
+          Stephen Kaltenbach, Room Cube, 1967. Blueprint, 18 x 24 inches, edition of 10.
+        </div>
+      </div>
+      <div class="slide">
+        <img src="static/openAfterDeath.jpg"></img>
+        <div class="footer">
+          Stephen Kaltenbach, OPEN AFTER MY DEATH, 1970. Mild steel, engraved, with unknown contents, 3 x 6 x 3 inches.
+        </div>
+      </div>
+    </carousel>
+
+    <carousel-nav id="myCarouselNav">
+      <button class="active"></button><button></button><button></button><button></button>
+    </carousel-nav>
+
+    <p>During the late 1960s, after graduating from UC Davis (BA, 1966; MA, 1967) and moving to New York, Stephen Kaltenbach established a reputation in the emerging international field of Conceptual art. But in 1970, just as he was achieving career
+      success, Kaltenbach abruptly withdrew to California’s Central Valley, appearing to abandon Conceptual work in favor of the more traditional mediums of painting and sculpture. Coinciding with the 50th anniversary of his “dropout,” this
+      exhibition considers Kaltenbach’s engagement with time as a principal theme across his remarkably diverse career, which encompasses bronze time capsules, advertisements placed anonymously in Artforum magazine in 1968-69, and the monumental
+      photorealist painting Portrait of My Father (1972-79)</p>
+    <p>Guest Curators: Constance Lewallen and Ted Mann</p>
+  </main>
+
+  <footer>
+    <div>
+      <h3>manetti shrem museum</h3>
+      <p>254 Old Davis Rd. <br>Davis, CA 95616</p>
+    </div>
+    <div>
+      <h3>Hours</h3>
+      <ul>
+        <li>Tuesday, Wednesday, and Friday: Noon-6pm</li>
+        <li>Thursday: Noon-9pm</li>
+        <li>Saturday-Sunday: 11am-5pm</li>
+        <li>Monday: Closed</li>
+      </ul>
+    </div>
+    <div>
+      <h3>The Manetti Shrem Museum will be temporarily closed starting March 16, 2020</h3>
+      <p>This is to prioritize the health and safety of our students, faculty, and the community at large. Thank you for your patience.</p>
+    </div>
+  </footer>
+</body>
+
+<!-- import the webpage's browser-side javascript file -->
+<!-- Does not do anything yet -->
+<script src="script.js"></script>
